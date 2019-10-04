@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:shiro="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>测试</title>
+</head>
+<body>
+     <h1 th:text="${name}"></h1>
+     <hr>
+     <div shiro:hasPermission="user-add">
+         点击进入用户添加功能：<a href="/add">添加</a><br>
+     </div>
+     <div shiro:hasPermission="user-update">
+         点击进入用户更新功能：<a href="/update">更新</a>
+     </div>
+
+
+</body>
+</html>
